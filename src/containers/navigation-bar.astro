@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+
+import NavigationMenu from "@/components/navigation-menu";
+import { buttonVariants } from "@/components/ui/button";
+
+import avatarSrc from "/public/notion-avatar-arjby.png";
+
+const menus = ["Works", "Experience", "Contact"];
+---
+
+<nav class="container flex items-center justify-between md:py-4">
+  <a href="/" class="ml-[-1rem]">
+    <Image src={avatarSrc} alt="Avatar" height={100} width={100} />
+  </a>
+  <NavigationMenu menus={menus} client:load />
+  <div class="flex items-center gap-2">
+    <a class={buttonVariants()} href="/ARJAY_BAYONA_RESUME.pdf" target="_blank">
+      Resume
+    </a>
+  </div>
+</nav>

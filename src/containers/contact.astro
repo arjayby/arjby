@@ -1,0 +1,48 @@
+---
+import { Element } from "react-scroll";
+
+import { Typography } from "@/components/ui/typography";
+import { buttonVariants } from "@/components/ui/button";
+
+import { cn } from "@/lib/utils";
+---
+
+<section class="container max-w-5xl py-10 md:py-20">
+  <Element name="Contact">
+    <Typography variant="h1" className="pt-6 md:pt-8 md:pb-2">
+      Contact
+    </Typography>
+    <Typography>
+      Feel free to reach out to me anytime, as my inbox is always open. Whether
+      you have any questions or just want to say hello, I will do my best to
+      respond as soon as I can.
+    </Typography>
+    <Typography>Personal</Typography>
+    <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
+      <li>
+        <a
+          class={cn(buttonVariants({ variant: "link" }) + " p-0")}
+          href="mailto:arjayby1@gmail.com"
+          target="_blank">arjayby1@gmail.com</a
+        >
+      </li>
+    </ul>
+    <Typography>Links</Typography>
+    <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
+      <li>
+        <a
+          class={cn(buttonVariants({ variant: "link" }) + " h-auto p-0")}
+          href="https://www.linkedin.com/in/arjayby/"
+          target="_blank">LinkedIn</a
+        >
+      </li>
+      <li>
+        <a
+          class={cn(buttonVariants({ variant: "link" }) + " h-auto p-0")}
+          href="https://github.com/arjayby/"
+          target="_blank">GitHub</a
+        >
+      </li>
+    </ul>
+  </Element>
+</section>

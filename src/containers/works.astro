@@ -1,0 +1,17 @@
+---
+import { Element } from "react-scroll";
+
+import { Typography } from "@/components/ui/typography";
+
+import { works } from "@/lib/data";
+import CardWork from "@/components/card-work";
+---
+
+<section class="container max-w-5xl py-10 md:py-20">
+  <Element name="Works">
+    <Typography variant="h1" className="py-6 md:py-8">Works</Typography>
+    <div class="grid gap-4 md:gap-8">
+      {works.map((work) => <CardWork work={work} />)}
+    </div>
+  </Element>
+</section>
