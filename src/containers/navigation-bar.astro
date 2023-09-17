@@ -6,7 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 import avatarSrc from "/public/arjby_notion_avatar.svg";
 
-const menus = ["Works", "Experience", "Contact"];
+import { menus } from "@/lib/data";
 ---
 
 <nav class="container flex items-center justify-between md:py-4">
@@ -15,6 +15,8 @@ const menus = ["Works", "Experience", "Contact"];
   </a>
   <NavigationMenu menus={menus} client:load />
   <div class="flex items-center gap-2">
-    <a class={buttonVariants()} href="/ARJAY_BAYONA_RESUME.pdf" target="_blank"> Resume</a>
+    <a class={buttonVariants()} href="/ARJAY_BAYONA_RESUME.pdf" target="_blank">
+      Resume
+    </a>
   </div>
 </nav>

@@ -1,20 +1,24 @@
 import { scroller } from "react-scroll";
 
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { type LucideIcon, Briefcase, Mail, Hammer } from "lucide-react";
 
-import { Menu } from "lucide-react";
+import type { menus } from "@/lib/data";
 
 interface NavigationMenuProps {
-  menus: string[];
+  menus: typeof menus;
 }
 
 export default function NavigationMenu({ menus }: NavigationMenuProps) {
+  const menusWithIcons: Record<
+    (typeof menus)[number],
+    React.ReactElement<LucideIcon>
+  > = {
+    Works: <Hammer />,
+    Experience: <Briefcase />,
+    Contact: <Mail />,
+  };
+
   const scrollTo = (element: string) => () => {
     scroller.scrollTo(element, {
       duration: 400,
@@ -26,23 +30,18 @@ export default function NavigationMenu({ menus }: NavigationMenuProps) {
 
   return (
     <div className="flex items-center">
-      <div className="block pt-2 md:hidden">
-        <DropdownMenu>
-          <DropdownMenuTrigger>
-            <Menu />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            {menus.map((menu) => (
-              <DropdownMenuItem
-                key={menu}
-                className="cursor-pointer p-2 font-medium"
-                onClick={scrollTo(menu)}
-              >
-                {menu}
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
+      <div className="ml-[-1rem] block pt-2 md:hidden">
+        {menus.map((menu) => (
+          <Button
+            key={menu}
+            variant="ghost"
+            onClick={scrollTo(menu)}
+            className="p-2"
+            aria-label={menu}
+          >
+            {menusWithIcons[menu]}
+          </Button>
+        ))}
       </div>
       <div className="hidden gap-1 md:block">
         {menus.map((menu) => (

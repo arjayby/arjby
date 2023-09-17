@@ -1,5 +1,7 @@
 import type { Works, Experiences } from "@/types";
 
+export const menus = <const>["Works", "Experience", "Contact"];
+
 export const works: Works = [
   {
     title: "Capture",
