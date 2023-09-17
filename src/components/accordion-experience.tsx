@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import type { Experiences } from "@/lib/types";
+import type { Experiences } from "@/types";
 
 interface AccordionExperienceProps {
   experiences: Experiences;
