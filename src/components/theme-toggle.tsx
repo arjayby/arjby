@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 
-import { Button } from "@/components/ui/button";
-import { Sun, Moon } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 
 export default function ThemeToggle() {
   const defaultTheme =
@@ -26,8 +26,15 @@ export default function ThemeToggle() {
   }, [theme]);
 
   return (
-    <Button variant="ghost" onClick={toggleTheme} aria-label="Toggle theme">
-      {theme === "light" ? <Sun /> : <Moon />}
-    </Button>
+    <Fragment>
+      <div className="flex items-center space-x-2">
+        <Switch
+          id="airplane-mode"
+          checked={theme === "dark"}
+          onCheckedChange={toggleTheme}
+        />
+        <Label htmlFor="airplane-mode">Dark Mode</Label>
+      </div>
+    </Fragment>
   );
 }
