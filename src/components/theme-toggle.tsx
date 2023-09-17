@@ -10,6 +10,7 @@ export default function ThemeToggle() {
       : "light ") ?? "light";
 
   const [theme, setTheme] = useState(defaultTheme);
+  const [isMounted, setIsMounted] = useState(false);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -24,6 +25,14 @@ export default function ThemeToggle() {
 
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <Fragment>
