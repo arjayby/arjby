@@ -38,11 +38,12 @@ export default function ThemeToggle() {
     <Fragment>
       <div className="flex items-center space-x-2">
         <Switch
-          id="airplane-mode"
+          id="dark-mode"
           checked={theme === "dark"}
           onCheckedChange={toggleTheme}
+          aria-label="Dark Mode"
         />
-        <Label htmlFor="airplane-mode">Dark Mode</Label>
+        <Label htmlFor="dark-mode">Dark Mode</Label>
       </div>
     </Fragment>
   );
