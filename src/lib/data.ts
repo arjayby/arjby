@@ -4,11 +4,54 @@ export const menus = <const>["Works", "Experience", "Contact"];
 
 export const works: Works = [
   {
+    title: "Bounty",
+    description:
+      "A platform aimed at enhancing employee performance and retention through automated rewards and recognition. It aligns employee incentives with company goals.",
+    link: {
+      name: "https://joinbounty.ai",
+      url: "https://joinbounty.ai",
+    },
+    technologies: [
+      "React",
+      "Zustand",
+      "Chakra UI",
+      "tRPC",
+      "React Query",
+      "PropelAuth",
+    ],
+  },
+  {
+    title: "Bounty",
+    description:
+      "A platform that allows users to get paid for posting about their favorite brands on TikTok and Instagram. The platform helps users build relationships with brands they love and provides a way to monetize their social media content.",
+    link: {
+      name: "https://www.bounty.co",
+      url: "https://www.bounty.co",
+    },
+    technologies: ["React", "Redux", "Chakra UI", "GraphQL", "Apollo"],
+  },
+  {
     title: "Capture",
     description:
       "A service that digitizes merchant onboarding application forms, simplifies workflows, and detects potential fraudulent applications early on to enhance safety for businesses.",
     link: {
-      name: "https://www.jewelpaymentech.com/",
+      name: "https://www.jewelpaymentech.com",
+      url: "https://www.jewelpaymentech.com/capture.html",
+    },
+    technologies: [
+      "React",
+      "Redux",
+      "React Testing Library",
+      "Semantic UI",
+      "Axios",
+    ],
+  },
+  {
+    title: "Capture",
+    description:
+      "A service that digitizes merchant onboarding application forms, simplifies workflows, and detects potential fraudulent applications early on to enhance safety for businesses.",
+    link: {
+      name: "https://www.jewelpaymentech.com",
       url: "https://www.jewelpaymentech.com/capture.html",
     },
     technologies: [
@@ -24,8 +67,8 @@ export const works: Works = [
     description:
       "Stack Education (StackEd) provides free cloud-based educational tech to schools for job-ready programming graduates, aiming to bridge the education-employment gap.",
     link: {
-      name: "https://stackeducation.org/",
-      url: "https://stackeducation.org/",
+      name: "https://stackeducation.org",
+      url: "https://stackeducation.org",
     },
     technologies: [
       "React",
@@ -40,8 +83,8 @@ export const works: Works = [
     description:
       "Connects coaches and students in any sport, allowing students to find the right coach, compare prices and locations, and book instantly through the platform.",
     link: {
-      name: "https://findisport.com/",
-      url: "https://findisport.com/en/",
+      name: "https://findisport.com",
+      url: "https://findisport.com/en",
     },
     technologies: ["React", "React Native", "Expo", "NativeBase", "Firebase"],
   },
@@ -50,8 +93,8 @@ export const works: Works = [
     description:
       "Provides customer-centric online mortgage application, AI assessment, rate rebate comparison, and smart mortgage computer services to simplify property purchasing.",
     link: {
-      name: "https://hkroots.io/",
-      url: "https://hkroots.io/",
+      name: "https://hkroots.io",
+      url: "https://hkroots.io",
     },
     technologies: [
       "React",
@@ -65,6 +108,17 @@ export const works: Works = [
 ];
 
 export const experiences: Experiences = [
+  {
+    company: "Bounty",
+    role: "Software Engineer",
+    yearStarted: 2023,
+    yearEnded: 2024,
+    responsibilities: [
+      "Developed automated, performance-based rewards systems to improve employee engagement and retention.",
+      "Conducted maintenance and bug fixing, along with adding new features to enhance the platform’s functionality.",
+      "Technologies used and worked on are React, Zustand, Chakra UI, tRPC, React Query, PropelAuth, GraphQL.",
+    ],
+  },
   {
     company: "Jewel Paymentech",
     role: "Frontend Developer",
