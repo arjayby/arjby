@@ -47,22 +47,6 @@ export const works: Works = [
     ],
   },
   {
-    title: "Capture",
-    description:
-      "A service that digitizes merchant onboarding application forms, simplifies workflows, and detects potential fraudulent applications early on to enhance safety for businesses.",
-    link: {
-      name: "https://www.jewelpaymentech.com",
-      url: "https://www.jewelpaymentech.com/capture.html",
-    },
-    technologies: [
-      "React",
-      "Redux",
-      "React Testing Library",
-      "Semantic UI",
-      "Axios",
-    ],
-  },
-  {
     title: "StackEd",
     description:
       "Stack Education (StackEd) provides free cloud-based educational tech to schools for job-ready programming graduates, aiming to bridge the education-employment gap.",
