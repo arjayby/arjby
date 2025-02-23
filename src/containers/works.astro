@@ -7,10 +7,10 @@ import { Typography } from "@/components/ui/typography";
 import { works } from "@/lib/data";
 ---
 
-<section class="container max-w-5xl py-10 md:py-20">
+<section class="container py-10 md:pb-20">
   <Element name="Works">
-    <Typography variant="h1" className="py-6 md:py-8">Works</Typography>
-    <div class="grid gap-4 md:gap-8">
+    <Typography variant="h1" className="py-6 md:py-8">Works 🎨</Typography>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
       {works.map((work) => <CardWork work={work} />)}
     </div>
   </Element>

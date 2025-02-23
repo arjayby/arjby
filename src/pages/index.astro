@@ -1,41 +1,49 @@
 ---
-import NavigationBar from "@/containers/navigation-bar.astro";
-import Hero from "@/containers/hero.astro";
 import Works from "@/containers/works.astro";
 import Experience from "@/containers/experience.astro";
 import Contact from "@/containers/contact.astro";
 import Footer from "@/containers/footer.astro";
+import MainLayout from "@/layouts/main-layout.astro";
 
 import "@/styles/globals.css";
 ---
 
 <html lang="en">
   <head>
-    <title>Arjay Bayona — Software Engineer | Frontend Developer</title>
+    <title>Arjay Bayona — Software Engineer</title>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="robots" content="index" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="index, follow" />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Arjay Bayona — Software Engineer | Frontend Developer" />
-    <meta name="description" content="I make software do the cha-cha for a living." />
-
-    <!-- Astro -->
-    <meta name="generator" content={Astro.generator} />
+    <meta name="title" content="Arjay Bayona — Software Engineer" />
+    <meta
+      name="description"
+      content="Software Engineer leveraging AI to ship products faster and smarter. Based in Philippines."
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://arjby.com/" />
-    <meta property="og:title" content="Arjay Bayona — Software Engineer | Frontend Developer" />
-    <meta property="og:description" content="I make software do the cha-cha for a living." />
+    <meta property="og:title" content="Arjay Bayona — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineer leveraging AI to ship products faster and smarter. Based in Philippines."
+    />
     <meta property="og:image" content="https://arjby.com/og.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://arjby.com/" />
-    <meta property="twitter:title" content="Arjay Bayona — Software Engineer | Frontend Developer" />
-    <meta property="twitter:description" content="I make software do the cha-cha for a living." />
+    <meta property="twitter:title" content="Arjay Bayona — Software Engineer" />
+    <meta
+      property="twitter:description"
+      content="Software Engineer leveraging AI to ship products faster and smarter. Based in Philippines."
+    />
     <meta property="twitter:image" content="https://arjby.com/og.png" />
 
     <!-- Favicons -->
@@ -45,12 +53,12 @@ import "@/styles/globals.css";
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <NavigationBar />
-    <Hero />
-    <Works />
-    <Experience />
-    <Contact />
-    <Footer />
+    <MainLayout>
+      <Works />
+      <Experience />
+      <Contact />
+      <Footer />
+    </MainLayout>
   </body>
 </html>
 

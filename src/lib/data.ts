@@ -6,7 +6,17 @@ export const works: Works = [
   {
     title: "Bounty",
     description:
-      "A platform aimed at enhancing employee performance and retention through automated rewards and recognition. It aligns employee incentives with company goals.",
+      "A platform that allows users to get paid for posting about their favorite brands on TikTok and Instagram.",
+    link: {
+      name: "https://www.bounty.co",
+      url: "https://www.bounty.co",
+    },
+    technologies: ["React", "Redux", "Chakra UI", "GraphQL", "Apollo"],
+  },
+  {
+    title: "Join Bounty",
+    description:
+      "A platform aimed at enhancing employee performance and retention through automated rewards and recognition.",
     link: {
       name: "https://joinbounty.ai",
       url: "https://joinbounty.ai",
@@ -19,16 +29,6 @@ export const works: Works = [
       "React Query",
       "PropelAuth",
     ],
-  },
-  {
-    title: "Bounty",
-    description:
-      "A platform that allows users to get paid for posting about their favorite brands on TikTok and Instagram. The platform helps users build relationships with brands they love and provides a way to monetize their social media content.",
-    link: {
-      name: "https://www.bounty.co",
-      url: "https://www.bounty.co",
-    },
-    technologies: ["React", "Redux", "Chakra UI", "GraphQL", "Apollo"],
   },
   {
     title: "Capture",
@@ -75,7 +75,7 @@ export const works: Works = [
   {
     title: "Roots",
     description:
-      "Provides customer-centric online mortgage application, AI assessment, rate rebate comparison, and smart mortgage computer services to simplify property purchasing.",
+      "Provides customer-centric online mortgage application, rate rebate comparison, and smart mortgage computer services to simplify property purchasing.",
     link: {
       name: "https://hkroots.io",
       url: "https://hkroots.io",

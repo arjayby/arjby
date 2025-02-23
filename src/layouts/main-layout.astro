@@ -1,0 +1,75 @@
+---
+import { Typography } from "@/components/ui/typography";
+import { Mail, Github, Linkedin, MapPin, Download } from "lucide-react";
+---
+
+<div class="flex min-h-screen flex-col lg:flex-row">
+  <aside
+    class="relative lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-[400px] lg:py-28 lg:pl-16"
+  >
+    <div
+      class="flex flex-col items-center px-6 pt-16 lg:items-start lg:px-0 lg:pt-0"
+    >
+      <div class="h-32 w-32 overflow-hidden rounded-full lg:h-44 lg:w-44">
+        <img
+          src="/src/assets/me.jpeg"
+          alt="Profile picture"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <Typography
+        variant="h1"
+        className="mt-6 text-center font-bold lg:mt-8 lg:text-left"
+      >
+        Arjay Bayona
+      </Typography>
+      <div
+        class="mt-4 flex flex-wrap items-center justify-center gap-2 text-muted-foreground lg:justify-start"
+      >
+        <div class="flex items-center gap-2">
+          <MapPin size={16} />
+          <span>Philippines</span>
+        </div>
+        <span>•</span>
+        <span>Software Engineer</span>
+      </div>
+      <p class="mt-4 text-center text-muted-foreground lg:text-left">
+        Leveraging AI to ship products faster 🚀
+      </p>
+      <div class="mt-4 flex gap-4">
+        <a
+          href="https://github.com/arjayby"
+          target="_blank"
+          class="text-muted-foreground transition-colors hover:text-foreground"
+        >
+          <Github size={20} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/arjayby"
+          target="_blank"
+          class="text-muted-foreground transition-colors hover:text-foreground"
+        >
+          <Linkedin size={20} />
+        </a>
+        <a
+          href="mailto:arjayby1@gmail.com"
+          target="_blank"
+          class="text-muted-foreground transition-colors hover:text-foreground"
+        >
+          <Mail size={20} />
+        </a>
+      </div>
+      <a
+        href="/Arjay-Bayona_RESUME.pdf"
+        download
+        class="mt-6 inline-flex w-fit items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+      >
+        <span>Download Resume</span>
+        <Download size={16} />
+      </a>
+    </div>
+  </aside>
+  <main class="flex-1 py-8 lg:ml-[400px] lg:px-16">
+    <slot />
+  </main>
+</div>
