@@ -1,6 +1,8 @@
 ---
 import { Typography } from "@/components/ui/typography";
 import { Mail, Github, Linkedin, MapPin, Download } from "lucide-react";
+import { Image } from "astro:assets";
+import profileImage from "@/assets/me.jpeg";
 ---
 
 <div class="flex min-h-screen flex-col lg:flex-row">
@@ -11,8 +13,8 @@ import { Mail, Github, Linkedin, MapPin, Download } from "lucide-react";
       class="flex flex-col items-center px-6 pt-16 lg:items-start lg:px-0 lg:pt-0"
     >
       <div class="h-32 w-32 overflow-hidden rounded-full lg:h-44 lg:w-44">
-        <img
-          src="/src/assets/me.jpeg"
+        <Image
+          src={profileImage}
           alt="Profile picture"
           class="h-full w-full object-cover"
         />
